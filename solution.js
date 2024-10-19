@@ -266,12 +266,7 @@ function filterFalsey(arr) {
 
 // 28. Find Object in Array (without find)
 function findUser(users, name) {
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].name === name) {
-            return users[i];
-        }
-    }
-    return null;
+  return users.find(user => user.name === name);
 }
 
 // 29. Use reduce to Sum Array Elements
