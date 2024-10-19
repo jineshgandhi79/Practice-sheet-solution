@@ -275,12 +275,8 @@ function findUser(users, name) {
 }
 
 // 29. Use reduce to Sum Array Elements (without reduce)
-function sumArrayWithReduce(nums) {
-    let sum = 0;
-    for (let i = 0; i < nums.length; i++) {
-        sum += nums[i];
-    }
-    return sum;
+function sumArray(nums) {
+  return nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
 // 30. Check All Even Numbers using every (without every)
