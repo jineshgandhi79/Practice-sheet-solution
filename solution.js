@@ -41,18 +41,15 @@ function sumArray(arr) {
 
 // 5. Flatten Nested Arrays
 function flattenArray(arr) {
-    let result = [];
-    function flatten(subArray) {
-        for (let i = 0; i < subArray.length; i++) {
-            if (Array.isArray(subArray[i])) {
-                flatten(subArray[i]);
-            } else {
-                result.push(subArray[i]);
-            }
+    let ans = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (Array.isArray(arr[i])) {
+            ans = ans.concat(flattenArray(arr[i])); 
+        } else {
+            ans.push(arr[i]); 
         }
     }
-    flatten(arr);
-    return result;
+    return ans;
 }
 
 // 6. Merge Two Objects
