@@ -274,17 +274,12 @@ function findUser(users, name) {
     return null;
 }
 
-// 29. Use reduce to Sum Array Elements (without reduce)
+// 29. Use reduce to Sum Array Elements
 function sumArray(nums) {
   return nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
-// 30. Check All Even Numbers using every (without every)
+// 30. Check All Even Numbers using every
 function allEven(nums) {
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] % 2 !== 0) {
-            return false;
-        }
-    }
-    return true;
+  return nums.every(num => num % 2 === 0);
 }
