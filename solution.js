@@ -231,8 +231,8 @@ var globalVar = 'I am global';
 function localScope() {
     var localVar = 'I am local';
     console.log(globalVar); // I am global
-    //console.log(localVar); // Error: localVar is not defined
 }
+//console.log(localVar); // Error: localVar is not defined
 
 // 24. Block Scope with let
 function blockScopeWithLet() {
