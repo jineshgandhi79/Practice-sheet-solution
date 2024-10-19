@@ -254,17 +254,17 @@ function varLetConstDifferences() {
     // z = 30; // Error: Assignment to constant variable
 }
 
-// 26. Use map to Transform Array (without map)
+// 26. Use map to Transform Array 
 function doubleNumbers(nums) {
   return nums.map(num => num * 2);
 }
 
-// 27. Use filter to Remove Falsey Values (without filter)
+// 27. Use filter to Remove Falsey Values 
 function filterFalsey(arr) {
     return arr.filter(Boolean);
 }
 
-// 28. Find Object in Array (without find)
+// 28. Find Object in Array 
 function findUser(users, name) {
   return users.find(user => user.name === name);
 }
