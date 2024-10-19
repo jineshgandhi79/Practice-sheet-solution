@@ -256,11 +256,7 @@ function varLetConstDifferences() {
 
 // 26. Use map to Transform Array (without map)
 function doubleNumbers(nums) {
-    let doubled = [];
-    for (let i = 0; i < nums.length; i++) {
-        doubled.push(nums[i] * 2);
-    }
-    return doubled;
+  return nums.map(num => num * 2);
 }
 
 // 27. Use filter to Remove Falsey Values (without filter)
